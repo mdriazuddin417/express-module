@@ -17,14 +17,14 @@ Generates module folders like your `attendance` style:
 ## One command (single module)
 
 ```bash
-express-module student
+npx express-module student
 # creates ./modules/student/...
 ```
 
 ## One command (multiple modules)
 
 ```bash
-express-module student teacher user auth
+npx express-module student teacher user auth
 # creates:
 # ./modules/student/...
 # ./modules/teacher/...
