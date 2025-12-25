@@ -1,0 +1,49 @@
+{
+  "name": "express-module",
+  "version": "1.1.0",
+  "description": "Single-command module to generate one or many CRUD module folders under ./modules (auto-created).",
+  "keywords": [
+    "scaffold",
+    "generator",
+    "express",
+    "mongoose",
+    "zod",
+    "crud",
+    "typescript",
+    "modules"
+  ],
+  "license": "MIT",
+  "author": "DevRiaz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/your-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/your-repo/issues"
+  },
+  "homepage": "https://github.com/your-org/your-repo#readme",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "express-module": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
